@@ -145,6 +145,18 @@ class ProductsTableSeeder extends Seeder
             'size' => 3
         ]);
         Product::create([
+            'name' => 'Hastatum Silver',
+            "family" => 'Philodendron',
+            'slug' => 'hastatum-silver',
+            'diameter' => '17 cm',
+            'height' => '65 cm',
+            'sun' => json_encode(["couvert"]),
+            'level' => 'Facile',
+            'price' => 39,
+            'image' => "https://plnts.com/wp-content/uploads/2020/03/PL_L_001_Philodendron-Hastatum-Silver_potCR_L_1022417-600x750.jpg",
+            'size' => 3
+        ]);
+        Product::create([
             'name' => 'Regal Shield',
             "family" => 'Alocasia',
             'slug' => 'regal-shield',
@@ -266,18 +278,6 @@ class ProductsTableSeeder extends Seeder
             'level' => 'Facile',
             'price' => 29,
             'image' => "https://plnts.com/wp-content/uploads/2020/03/PL_L_007_Dieffenbachia-Reflector_potCR_L_1035839-s-1-600x750.jpg",
-            'size' => 2
-        ]);
-        Product::create([
-            'name' => 'Hastatum Silver',
-            "family" => 'Philodendron',
-            'slug' => 'hastatum-silver',
-            'diameter' => '17 cm',
-            'height' => '35 cm',
-            'sun' => json_encode(["couvert"]),
-            'level' => 'Facile',
-            'price' => 39,
-            'image' => "https://plnts.com/wp-content/uploads/2020/03/PL_L_001_Philodendron-Hastatum-Silver_potCR_L_1022417-600x750.jpg",
             'size' => 2
         ]);
         Product::create([

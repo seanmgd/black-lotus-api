@@ -1,0 +1,19 @@
+type Query {
+    products: [Product!]! @all
+    product(slug: String! @eq): Product @find(model: "App\\Product")
+}
+
+type Product {
+    id: ID!
+    name: String!
+    family: String!
+    slug: String!
+    diameter: String!
+    height: String!
+    level: String!
+    pet_friendly: Boolean!
+    sun: String!
+    price: Int!
+    image: String!
+    size: Int!
+}

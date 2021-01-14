@@ -12,3 +12,6 @@ npm-debug.log
 yarn-error.log
 .vercel
 /.idea
+_lighthouse_ide_helper.php
+programmatic-types.graphql
+schema-directives.graphql
