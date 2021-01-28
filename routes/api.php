@@ -24,6 +24,8 @@ Route::post('/login', 'AuthController@login');
 
 //User
 Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/auth/', 'AuthController@checkAuth');
     Route::resource('/users', 'UserController');
     Route::post('/logout', 'AuthController@logout');
 });
+

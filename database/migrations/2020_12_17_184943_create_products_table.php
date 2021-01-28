@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             $table->boolean('pet_friendly')->nullable();
             $table->string('sun')->nullable();
             $table->integer('price');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->string('size');
         });
     }

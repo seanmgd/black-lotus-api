@@ -67,6 +67,10 @@ class AuthController extends Controller
         }
     }
 
+    public function checkAuth() {
+        return "success";
+    }
+
     public function logout(Request $request)
     {
         $request->user()->tokens()->delete();
